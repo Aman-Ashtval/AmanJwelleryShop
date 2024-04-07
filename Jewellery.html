@@ -1,0 +1,320 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <link rel="stylesheet" href="./Jewellery.css" />
+
+        <!-- favicon image -->
+        <link rel="icon" href="https://www.freepik.com/free-vector/ornamental-elegant-logo_5691435.htm#fromView=search&page=1&position=29&uuid=8e2ce221-f657-4b7d-a196-9512b9709966" type="image/x-icon">
+
+        <!-- ----------------------------------------------------------------BootStrap CDN for css style--------------------------------------------------------- -->
+        <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.0.0/dist/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+
+        <!-- -----------------------------------------Meta information about document--------------------------------------- -->
+        <meta charset="UTF-8">
+        <meta name="description" content="my practice work">
+        <meta name="keywords" content="HTML, CSS, JavaScript">
+        <meta name="author" content="Aman Kumar">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    </head>
+    <body>
+
+        <!--navbar open button section-->
+        <div class="fixed-top d-flex justify-content-end" id="stickySection">            
+            <a href="#menuSection" class="open-menu-btn" id="openBtn">
+                <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" fill="currentColor" class="bi bi-list" viewBox="0 0 16 16">
+                    <path fill-rule="evenodd" d="M2.5 12a.5.5 0 0 1 .5-.5h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5m0-4a.5.5 0 0 1 .5-.5h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5m0-4a.5.5 0 0 1 .5-.5h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5"/>
+                </svg>
+            </a>
+        </div>
+
+        <!-- hide show menu section -->
+        <div class="menu-bg" id="menuSection">
+            <div class="d-flex justify-content-end p-3">                
+                <button type="button" class="closeBtn" id="closeBtn">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" fill="#000000" class="bi bi-x-lg" viewBox="0 0 16 16">
+                        <path d="M2.146 2.854a.5.5 0 1 1 .708-.708L8 7.293l5.146-5.147a.5.5 0 0 1 .708.708L8.707 8l5.147 5.146a.5.5 0 0 1-.708.708L8 8.707l-5.146 5.147a.5.5 0 0 1-.708-.708L7.293 8z"/>
+                    </svg>
+                </button>
+            </div>
+            <div class="menu-content">                
+                <a href="#homeSection" class="menu-section-link">HOME</a>
+                <a href="#aboutUs" class="menu-section-link">ABOUT</a>
+                <a href="#offerSection" class="menu-section-link">SHOP</a>
+                <a href="#blogSection" class="menu-section-link">BLOG</a>                
+            </div>
+        </div>
+
+
+        <!-- Home section container -->
+        <div class="container-bg-top mb-5" id="homeSection">
+            <h2 class="logo-text">HEALET</h2>
+            <div class="container-fluid d-flex flex-column justify-content-center home-text-container">
+                <h1 class="home-h1">Best Jewellery Collection</h1>
+                <p class="home-p">
+                    It is a long established fact that a reader will be distracted by the 
+                    readable content of a page when looking at its layout. The point of using Lorem
+                </p>
+                <button type="button" class="btn btn-outline-warning align-self-start mt-2">Shop Now</button>
+            </div>
+        </div>
+
+
+        <!-- ----------------------------------------latest product section-------------------------- -->
+
+        <div class="container mt-5 mb-5">
+            <h1 class="latest-product-heading">LATEST PRODUCTS</h1>
+            <ul class="row d-flex flex-row product-list mt-3" id="targetList"></ul>
+            <div class="col-12 mt-3 mb-5 text-center">
+                <button type="button" class="view-all-product-btn">View All Products</button>
+            </div>
+
+
+            <!-- -------------------------------------About Us Section-------------------------------- -->
+            <div class="row mt-5" id="aboutUs">
+                <div class="col-12 col-lg-6 d-flex justify-content-end align-items-end about-us-image-section">
+                    <img src="https://res.cloudinary.com/dh4dcboea/image/upload/v1711789524/Jewellery_Project/about-img_nwdopr.jpg" alt="about us" class="about-image" />
+                </div>
+                
+                <div class="col-12 col-lg-6 d-flex flex-column justify-content-center about-us-text-container">
+                    <h2 class="about-us-heading">ABOUT US</h2>
+                    <p class="about-us-p">
+                        Lorem ipsum dolor sit amet consectetur adipisicing elit. 
+                        Corrupti dolorem eum consequuntur ipsam repellat dolor soluta aliquid laborum, 
+                        eius odit consectetur vel quasi in quidem, eveniet ab est corporis tempore.
+                    </p>
+                    <button type="button" class="view-all-product-btn mt-3 align-self-start">Read More</button>
+                </div>
+            </div>
+        </div>
+
+
+        <!-- ------------------------------------------------offer section------------------------------------------- -->
+        <div class="container-fluid mt-5 mb-5" id="offerSection">
+            <div class="row">
+                <div class="col-12 col-lg-8">
+                    <div class="offer-section-1">                        
+                        <h3 class="offer-h1">Upto 15% off</h3>
+                        <button type="button" class="shop-now-btn">Shop Now</button>
+                    </div>
+                </div>
+                <div class="col-12 col-lg-4">
+                    <div class="offer-div d-flex flex-column justify-content-between">
+                        <div class="offer-section-2 d-flex flex-column justify-content-end align-items-end">
+                            <h3 class="offer-h1 thik-h1">Upto 10% off</h3>
+                            <button type="button" class="shop-now-btn">Shop Now</button>
+                        </div>
+                        <div class="offer-section-3 d-flex flex-column justify-content-end">
+                            <h3 class="offer-h1 thik-h1">Upto 10% off</h3>
+                            <button type="button" class="shop-now-btn align-self-start">Shop Now</button> 
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+
+        <!-- ---------------------------------------------Latest Blog------------------------------- -->
+        <div class="container mt-5 mb-5" id="blogSection">
+            <h1 class="latest-product-heading">LATEST FROM BLOG</h1>
+            <div class="row d-md-flex justify-content-center">
+                <div class="col-12 col-md-7 col-lg-6 p-3">
+                    <div class="blog-container">                        
+                        <div class="blog-image-container">
+                            <img src="https://res.cloudinary.com/dh4dcboea/image/upload/v1711789526/Jewellery_Project/b1_gktvzc.jpg" alt="blog" class="blog-img" />
+                            <p class="date-p d-flex justify-content-center align-items-center">14<br/>July</p>
+                        </div>                        
+                        <div class="p-2 mt-5">
+                            <h2 class="blog-h2">Molestiae ad reiciendis dignissimos</h3>
+                            <p class="blog-p">
+                                alteration in some form, by injected humour, 
+                                or randomised words which don't look even slightly believable.
+                            </p>
+                            <button type="button" class="read-more-btn">Read More</button>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-12 col-md-7 col-lg-6 p-3">
+                    <div class="blog-container">                        
+                        <div class="blog-image-container">
+                            <img src="https://res.cloudinary.com/dh4dcboea/image/upload/v1711789528/Jewellery_Project/b2_br9lgi.jpg" alt="blog" class="blog-img" />
+                            <p class="date-p d-flex justify-content-center align-items-center">15<br/>July</p>
+                        </div>                        
+                        <div class="p-2 mt-5">
+                            <h2 class="blog-h2">Dolores vel maiores voluptatem enim</h3>
+                            <p class="blog-p">
+                                alteration in some form, by injected humour, 
+                                or randomised words which don't look even slightly believable.
+                            </p>
+                            <button type="button" class="read-more-btn">Read More</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+
+        <!-- ----------------------------------------------testimonial section--------------------------------- -->
+        <div class="container mt-5 mb-5">
+            <h1 class="latest-product-heading">TESTIMONIAL</h1>
+            <div class="row d-flex justify-content-center w-100">
+                <div class="col-12 col-md-7 col-lg-12" id="slider">
+                    <div class="testimonial-card d-flex flex-column align-items-center" id="card1">
+                        <div class="testimonial-image-container">
+                            <img src="https://res.cloudinary.com/dh4dcboea/image/upload/v1711789530/Jewellery_Project/client_afmtnj.jpg" alt="testimonial" class="testimonial-image" />                            
+                        </div>
+                        <h2 class="testimonial-name">Samantha Jonas</h2>
+                        <p class="testimonial-description">
+                            It is a long established fact that a reader will bedistracted by 
+                            the readable cIt is a long established factthat a reader will be 
+                            distracted by the readable c
+                        </p>
+                        <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="#ffffff" class="bi bi-quote" viewBox="0 0 16 16">
+                            <path d="M12 12a1 1 0 0 0 1-1V8.558a1 1 0 0 0-1-1h-1.388q0-.527.062-1.054.093-.558.31-.992t.559-.683q.34-.279.868-.279V3q-.868 0-1.52.372a3.3 3.3 0 0 0-1.085.992 4.9 4.9 0 0 0-.62 1.458A7.7 7.7 0 0 0 9 7.558V11a1 1 0 0 0 1 1zm-6 0a1 1 0 0 0 1-1V8.558a1 1 0 0 0-1-1H4.612q0-.527.062-1.054.094-.558.31-.992.217-.434.559-.683.34-.279.868-.279V3q-.868 0-1.52.372a3.3 3.3 0 0 0-1.085.992 4.9 4.9 0 0 0-.62 1.458A7.7 7.7 0 0 0 3 7.558V11a1 1 0 0 0 1 1z"/>
+                        </svg>
+                    </div>
+                    <div class="testimonial-card d-flex flex-column align-items-center" id="card2">
+                        <div class="testimonial-image-container">
+                            <img src="https://res.cloudinary.com/dh4dcboea/image/upload/v1684421321/team-3_iukvsg.jpg" alt="testimonial" class="testimonial-image" />                            
+                        </div>
+                        <h2 class="testimonial-name">Jhon Doe</h2>
+                        <p class="testimonial-description">
+                            It is a long established fact that a reader will bedistracted by 
+                            the readable cIt is a long established factthat a reader will be 
+                            distracted by the readable c
+                        </p>
+                        <svg xmlns="http://www.w3.org/2000/svg" width="25" height="25" fill="#ffffff" class="bi bi-quote" viewBox="0 0 16 16">
+                            <path d="M12 12a1 1 0 0 0 1-1V8.558a1 1 0 0 0-1-1h-1.388q0-.527.062-1.054.093-.558.31-.992t.559-.683q.34-.279.868-.279V3q-.868 0-1.52.372a3.3 3.3 0 0 0-1.085.992 4.9 4.9 0 0 0-.62 1.458A7.7 7.7 0 0 0 9 7.558V11a1 1 0 0 0 1 1zm-6 0a1 1 0 0 0 1-1V8.558a1 1 0 0 0-1-1H4.612q0-.527.062-1.054.094-.558.31-.992.217-.434.559-.683.34-.279.868-.279V3q-.868 0-1.52.372a3.3 3.3 0 0 0-1.085.992 4.9 4.9 0 0 0-.62 1.458A7.7 7.7 0 0 0 3 7.558V11a1 1 0 0 0 1 1z"/>
+                        </svg>
+                    </div>
+                </div>                
+            </div>
+        </div>
+
+
+        <!-- --------------------------------footer section--------------------------------------------- -->
+        <div class="mt-5 footer">
+            <div class="container">
+                <div class="row">
+
+                    <!-- footer email section -->
+                    <div class="col-12 col-lg-9">
+                        <div class="footer-section">
+                            <input type="email" placeholder="Enter your email" class="email-input" />
+                            <button type="button" class="email-btn">
+                                <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-arrow-right-short arrow-icon" viewBox="0 0 16 16">
+                                    <path fill-rule="evenodd" d="M4 8a.5.5 0 0 1 .5-.5h5.793L8.146 5.354a.5.5 0 1 1 .708-.708l3 3a.5.5 0 0 1 0 .708l-3 3a.5.5 0 0 1-.708-.708L10.293 8.5H4.5A.5.5 0 0 1 4 8"/>
+                                </svg>
+                            </button>
+                        </div>
+                    </div>
+                    <div class="col-12 col-lg-3 mt-4 mt-lg-0">
+                        <div class="social-icon-container">
+                            <div class="icon-div">
+                                <svg xmlns="http://www.w3.org/2000/svg" fill="#ffffff" class="bi bi-facebook social-icon" viewBox="0 0 16 16">
+                                    <path d="M16 8.049c0-4.446-3.582-8.05-8-8.05C3.58 0-.002 3.603-.002 8.05c0 4.017 2.926 7.347 6.75 7.951v-5.625h-2.03V8.05H6.75V6.275c0-2.017 1.195-3.131 3.022-3.131.876 0 1.791.157 1.791.157v1.98h-1.009c-.993 0-1.303.621-1.303 1.258v1.51h2.218l-.354 2.326H9.25V16c3.824-.604 6.75-3.934 6.75-7.951"/>
+                                  </svg>
+                            </div>
+                            <div class="icon-div">
+                                <svg xmlns="http://www.w3.org/2000/svg" fill="#ffffff" class="bi bi-linkedin social-icon" viewBox="0 0 16 16">
+                                    <path d="M0 1.146C0 .513.526 0 1.175 0h13.65C15.474 0 16 .513 16 1.146v13.708c0 .633-.526 1.146-1.175 1.146H1.175C.526 16 0 15.487 0 14.854zm4.943 12.248V6.169H2.542v7.225zm-1.2-8.212c.837 0 1.358-.554 1.358-1.248-.015-.709-.52-1.248-1.342-1.248S2.4 3.226 2.4 3.934c0 .694.521 1.248 1.327 1.248zm4.908 8.212V9.359c0-.216.016-.432.08-.586.173-.431.568-.878 1.232-.878.869 0 1.216.662 1.216 1.634v3.865h2.401V9.25c0-2.22-1.184-3.252-2.764-3.252-1.274 0-1.845.7-2.165 1.193v.025h-.016l.016-.025V6.169h-2.4c.03.678 0 7.225 0 7.225z"/>
+                                  </svg>
+                            </div>
+                            <div class="icon-div">
+                                <svg xmlns="http://www.w3.org/2000/svg" fill="#ffffff" class="bi bi-twitter social-icon"  viewBox="0 0 16 16">
+                                    <path d="M5.026 15c6.038 0 9.341-5.003 9.341-9.334q.002-.211-.006-.422A6.7 6.7 0 0 0 16 3.542a6.7 6.7 0 0 1-1.889.518 3.3 3.3 0 0 0 1.447-1.817 6.5 6.5 0 0 1-2.087.793A3.286 3.286 0 0 0 7.875 6.03a9.32 9.32 0 0 1-6.767-3.429 3.29 3.29 0 0 0 1.018 4.382A3.3 3.3 0 0 1 .64 6.575v.045a3.29 3.29 0 0 0 2.632 3.218 3.2 3.2 0 0 1-.865.115 3 3 0 0 1-.614-.057 3.28 3.28 0 0 0 3.067 2.277A6.6 6.6 0 0 1 .78 13.58a6 6 0 0 1-.78-.045A9.34 9.34 0 0 0 5.026 15"/>
+                                  </svg>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- footer menu section -->
+                    <div class="col-12 col-md-6 col-lg-3 mt-4">
+                        <div class="footer-flex-item">
+                            <h2 class="footer-heading">Menu</h2>
+                            <a href="#homeSection" class="footer-menu-link">Home</a>
+                            <a href="#aboutUs" class="footer-menu-link">About</a>
+                            <a href="#offerSection" class="footer-menu-link">Shop</a>
+                            <a href="#blogSection" class="footer-menu-link">Blog</a>
+                        </div>
+                    </div>
+
+                    <!-- footer instagram section -->
+                    <div class="col-12 col-md-6 col-lg-3 mt-4">
+                        <div class="footer-flex-item">
+                            <h2 class="footer-heading">Instagram</h2>
+                            <div class="d-flex align-items-center mt-3">
+                                <div class="bg-light p-2">
+                                    <img src="https://res.cloudinary.com/dh4dcboea/image/upload/v1711789540/Jewellery_Project/p1_lpzbzk.png" alt="instagram" class="footer-inta-product-img" />
+                                </div>                                
+                                <p class="footer-insta-p">
+                                    long established fact that a reader
+                                </p>
+                            </div>
+                            <div class="d-flex align-items-center mt-3">
+                                <div class="bg-light p-2">
+                                    <img src="https://res.cloudinary.com/dh4dcboea/image/upload/v1711789542/Jewellery_Project/p2_qt5gym.png" alt="instagram" class="footer-inta-product-img" />
+                                </div>                                
+                                <p class="footer-insta-p">
+                                    long established fact that a reader
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- footer about us -->
+                    <div class="col-12 col-md-6 col-lg-3 mt-4">
+                        <div class="footer-flex-item">
+                            <h2 class="footer-heading">Instagram</h2>
+                            <p class="footer-insta-p mt-3 ml-0">
+                                when looking at its layout. The point of using Lorem Ipsum is that it has 
+                                a more-or-less normal distribution of letters, as opposed to
+                            </p>
+                        </div>
+                    </div>
+
+                    <!-- footer contact us -->
+                    <div class="col-12 col-md-6 col-lg-3 mt-4">
+                        <div class="footer-flex-item">
+                            <h2 class="footer-heading">Contact Us</h2>
+                            <p class="footer-contact-p mt-3 ml-0">
+                                <svg xmlns="http://www.w3.org/2000/svg" width="14" height="14" fill="currentColor" class="bi bi-geo-alt mr-1" viewBox="0 0 16 16">
+                                    <path d="M12.166 8.94c-.524 1.062-1.234 2.12-1.96 3.07A32 32 0 0 1 8 14.58a32 32 0 0 1-2.206-2.57c-.726-.95-1.436-2.008-1.96-3.07C3.304 7.867 3 6.862 3 6a5 5 0 0 1 10 0c0 .862-.305 1.867-.834 2.94M8 16s6-5.686 6-10A6 6 0 0 0 2 6c0 4.314 6 10 6 10"/>
+                                <path d="M8 8a2 2 0 1 1 0-4 2 2 0 0 1 0 4m0 1a3 3 0 1 0 0-6 3 3 0 0 0 0 6"/>
+                                </svg>
+                                Location
+                            </p>
+                            <p class="footer-contact-p mt-3 ml-0">
+                                <svg xmlns="http://www.w3.org/2000/svg" width="14" height="14" fill="currentColor" class="bi bi-telephone-fill mr-1" viewBox="0 0 16 16">
+                                    <path fill-rule="evenodd" d="M1.885.511a1.745 1.745 0 0 1 2.61.163L6.29 2.98c.329.423.445.974.315 1.494l-.547 2.19a.68.68 0 0 0 .178.643l2.457 2.457a.68.68 0 0 0 .644.178l2.189-.547a1.75 1.75 0 0 1 1.494.315l2.306 1.794c.829.645.905 1.87.163 2.611l-1.034 1.034c-.74.74-1.846 1.065-2.877.702a18.6 18.6 0 0 1-7.01-4.42 18.6 18.6 0 0 1-4.42-7.009c-.362-1.03-.037-2.137.703-2.877z"/>
+                                </svg>
+                                call +911098539772
+                            </p>
+                            <p class="footer-contact-p mt-3 ml-0">
+                                <svg xmlns="http://www.w3.org/2000/svg" width="14" height="14" fill="currentColor" class="bi bi-envelope-fill mr-1" viewBox="0 0 16 16">
+                                    <path d="M.05 3.555A2 2 0 0 1 2 2h12a2 2 0 0 1 1.95 1.555L8 8.414zM0 4.697v7.104l5.803-3.558zM6.761 8.83l-6.57 4.027A2 2 0 0 0 2 14h12a2 2 0 0 0 1.808-1.144l-6.57-4.027L8 9.586zm3.436-.586L16 11.801V4.697z"/>
+                                </svg>
+                                Location
+                            </p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+
+
+        <!-- author info -->
+        <div class="container p-1 text-center">
+            <p class="text-dark">
+                © 2024 All Rights Reserved. By Aman Ashtval
+            </p>
+        </div>
+
+        <!-- ------------------------------------adding js file----------------------------------- -->
+        <script src="./Jewellery.js"></script>
+        <!-- bootstrap sdn js -->
+        <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+        <script src="https://cdn.jsdelivr.net/npm/popper.js@1.12.9/dist/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.0.0/dist/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
+    </body>
+</html>

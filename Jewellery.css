@@ -1,0 +1,646 @@
+*{
+    box-sizing: border-box;
+    font-family: 'Arial', 'Helvetica',' sans-serif';
+}
+
+
+/* menu section */
+.open-menu-btn{
+    text-decoration: none;
+    color: #011032;
+    padding: 10px;
+    margin: 22px;
+    width: 50px;
+    height: 50px;
+    font-weight: bold;
+    border-radius: 100%;
+    background-color: #DFE5E4;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.menu-bg{
+    width: 100%;
+    height: 100vh;
+    background-color: #0e0000;
+    display: flex;
+    flex-direction: column;
+}
+
+.closeBtn{
+    padding: 5px;
+    width: 30px;
+    height: 30px;
+    border-radius: 100%;
+    background-color: #DFE5E4;
+    border: none;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
+}
+
+.menu-content{
+    flex-grow: 1;
+    padding: 22px;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    animation-name: menuBar;
+    animation-duration: 3s;
+}
+
+@keyframes menuBar {
+    from{
+        font-size: 0px;
+        align-self: flex-start;
+        transform: rotate(0deg);
+    }
+    to{
+        height: 400px;
+        width: 400px;
+        font-size: 18px;
+        align-self: center;
+        transform: rotate(360deg);
+    }
+}
+
+.menu-section-link{
+    color: #ffffff;
+    font-size: 18px;
+    font-weight: 550;
+    margin-top: 16px;
+    text-decoration: none;
+}
+
+.menu-section-link:hover{
+    color: #FA8C40;
+    text-decoration: none;
+    cursor: pointer;
+}
+
+
+
+
+/* home section */
+
+.container-bg-top{
+    background-image: url('https://res.cloudinary.com/dh4dcboea/image/upload/v1711789560/Jewellery_Project/slider-bg_ka4sw0.jpg');
+    background-attachment: fixed;
+    background-size: cover;
+    height: 100vh;
+    padding: 22px;
+    display: flex;
+    flex-direction: column;
+}
+
+
+
+.logo-text{
+    font-size: 24px;
+    color: #ffffff;
+    font-weight: bold;
+}
+
+@media (max-width: 900px) {
+    .container-bg-top{
+        background-position: center;
+        padding: 16px 10px;
+    }
+
+    .logo-text{
+        font-size: 22px;
+    }
+}
+
+.home-text-container{
+    flex-grow: 1;
+    padding: 0px;
+}
+
+
+.home-h1{
+    color: #ffffff;
+    font-size: 60px;
+    font-weight: 550;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    width: 40%;
+}
+
+.home-p{
+    color: antiquewhite;
+    font-size: 18px;
+    font-weight: 400;
+    width: 40%;
+}
+
+@media (max-width: 900px) {
+    .home-h1{
+        font-size: 40px;
+        width: 60%;
+    }
+
+    .home-p{
+        font-size: 16px;
+        width: 60%;
+    }
+}
+
+/*---------------------------------------------------- latest product style section------------------------------------- */
+
+.latest-product-heading{
+    text-align: center;
+    color: #0e0000;
+    font-family: caveat;
+    font-size: 30px;
+    font-weight: 600;
+    margin: 22px 0px;
+}
+
+.product-list{
+    list-style-type: none;
+    padding: 0px;
+}
+
+.product-list-item{
+    margin-bottom: 22px;
+}
+
+.latest-product-card{
+    height: 300px;
+    margin: 5px;
+    padding: 5px;
+    background-color: #DFE5E4;
+    box-shadow: 1px 1px white;
+}
+
+.latest-product-card-tag{
+    color: #0e0000;
+    font-size: 14px;
+    margin: 0px;
+    padding: 5px;
+    font-weight: 50;
+    height: 40px;
+    width: 40px;
+    background-color: #ffffff;
+    border-radius: 50px;
+}
+
+.latest-product-card-image{
+    width: 50%;
+    height: 50%;
+}
+
+.latest-product-card-name{
+    color: #161D44;
+    font-size: 16px;
+    margin: 16px 0px 5px 0px;
+    font-weight: 450;
+}
+
+.price-spane{
+    color: #FA8C40;
+}
+
+.view-all-product-btn{
+    color: #ffffff;
+    font-size: 14px;
+    font-weight: 400;
+    padding: 7px 14px;
+    border: none;
+    border-radius: 3px;
+    background-color: #FA8C40;
+    cursor: pointer;
+}
+
+@media (max-width: 992px){
+    .view-all-product-btn{
+        color: #ffffff;
+        font-size: 12px;
+        font-weight: 300;
+        padding: 5px 10px;
+        border: none;
+        border-radius: 3px;
+        background-color: #FA8C40;
+        cursor: pointer;
+    }
+}
+
+.view-all-product-btn:hover{
+    background-color: transparent;
+    border: 1px solid #FA8C40;
+    color: #FA8C40;
+}
+
+
+/* ---------------------------------------------About Us Section------------------------- */
+.about-us-image-section{
+    height: 400px;
+    position: relative;
+    padding: 10px;
+}
+
+.about-us-image-section::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 50%;
+    height: 50%;
+    background-color: #0e0000;
+    z-index: -1; /* Ensure the pseudo-element is behind the content */
+}
+
+.about-image{
+    width: 95%;
+    height: 95%;
+}
+
+.about-us-heading{
+    color: #011032;
+    font-size: 32px;
+    font-weight: 600;
+    font-family: caveat;
+}
+
+.about-us-p{
+    font-size: 16px;
+    font-weight: 100;
+    text-align: justify;
+    opacity: 0.8;
+}
+
+@media (max-width: 991px){
+    .about-us-image-section{
+        height: 350px;
+    }
+
+    .about-us-image-section::before {
+        top: 10px;
+        left: 10px;
+    }
+
+    .about-us-heading{
+        font-size: 28px;
+        font-weight: 580;
+    }
+    
+    .about-us-p{
+        font-weight: 50;
+        font-size: 14px;
+        text-align: justify;
+    }
+}
+
+
+/* ------------------------------------------------------------offer section-------------------------------- */
+.offer-section-1{
+    padding: 22px 16px;
+    background-image: url('https://res.cloudinary.com/dh4dcboea/image/upload/v1711789534/Jewellery_Project/o1_sasxzn.jpg');
+    background-size: cover;
+    background-position: center;
+    height: 70vh;
+}
+
+@media (max-width: 991px){
+    .offer-section-1{
+        height: 40vh;
+        margin-bottom: 16px;
+    }
+}
+
+.offer-h1, .thik-h1{
+    color: #ffffff;
+    font-size: 48px;
+    font-weight: 600;
+    margin: 0px;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+}
+
+.shop-now-btn{
+    color: #FA8C40;
+    font-size: 18px;
+    font-weight: 350;
+    padding: 6px 30px;
+    margin-top: 16px;
+    background-color: transparent;
+    border: 1px solid #FA8C40;
+    cursor: pointer;
+}
+
+.shop-now-btn:hover{
+    color: #ffffff;
+    border: none;
+    background-color: #FA8C40;
+}
+
+.offer-div{
+    height: 70vh;
+}
+
+.offer-section-2,.offer-section-3{
+    padding: 22px 16px;
+    background-image: url('https://res.cloudinary.com/dh4dcboea/image/upload/v1711789536/Jewellery_Project/o2_d3ofss.jpg');
+    background-size: cover;
+    background-position: center;
+    height: 48%;
+}
+
+.thik-h1{
+    font-size: 32px;
+    font-weight: 570;
+}
+
+@media (max-width: 991px){
+    .offer-h1{
+        font-size: 32px;
+        font-weight: 550;
+    }
+
+    .thik-h1{
+        font-size: 26px;
+        font-weight: 500;
+    }
+
+    .shop-now-btn{
+        font-size: 14px;
+        padding: 5px 20px;
+    }
+}
+
+.offer-section-3{
+    background-image: url('https://res.cloudinary.com/dh4dcboea/image/upload/v1711789538/Jewellery_Project/o3_xwtqyw.jpg');
+}
+
+
+/* ---------------------------------------------------Latest Blog Section----------------------------------------------- */
+
+.blog-container{
+    background-color: #DFE5E4;
+}
+
+.blog-image-container{
+    position: relative;
+}
+
+.blog-img{
+    width: 100%;
+    position: relative;
+}
+
+.date-p{
+    color: #ffffff;
+    font-size: 16px;
+    font-weight: 600;
+    text-align: center;
+    padding: 2px;
+    margin: -40px 0px 0px 10px;
+    width: 60px;
+    height: 60px;
+    position: absolute;
+    background-color: #161D44;
+    border: 2px solid #DFE5E4;
+}
+
+.blog-h2{
+    color: #011032;
+    font-size: 20px;
+    font-weight: 600;
+}
+
+.blog-p{
+    color: #011032;
+    font-size: 16px;
+    font-weight: 450;
+    text-align: justify;
+    opacity: 0.8;
+}
+
+.read-more-btn{
+    color: #011032;
+    font-size: 16px;
+    font-weight: 400;
+    padding: 8px 18px;
+    margin: 10px 0px;
+    border: 1px solid #011032;
+    background-color: transparent;
+    cursor: pointer;
+}
+
+.read-more-btn:hover{
+    color: #ffffff;
+    background-color: #011032;
+    border: none;
+}
+
+
+/* ------------------------------------------------------testimonial card------------------------------------- */
+
+.testimonial-card{
+    padding: 24px;
+    width: 20%;
+    height: 400px;
+    background-color: #0e0000;
+    border-radius: 10px;
+    animation-name: cardSlider;
+    animation-duration: 5s;
+}
+
+@media screen and (min-width: 992px) {
+    .testimonial-card{
+        height: 350px;
+    }
+}
+
+@keyframes cardSlider {
+    from {margin-right: 0px; width: 20%;}
+    to {margin-right: 300px; width: 100%;}
+}
+
+.testimonial-image-container{
+    width: 150px;
+    height: 150px;
+    border: 5px solid #646b6a;
+    border-radius: 100%;
+    animation-name: cardImage;
+    animation-duration: 5s;
+}
+
+@keyframes cardImage {
+    from{width: 0px; height: 0px;}
+    to{width:150px; height: 150px;}
+}
+
+.testimonial-image{
+    width: 100%;
+    border-radius: 100%;
+}
+
+.testimonial-name{
+    color: #FA8C40;
+    font-size: 20px;
+    font-weight: 510;
+    margin: 16px 0px;
+}
+
+.testimonial-description{
+    color: #ffffff;
+    font-size: 18px;
+    font-weight: 400;
+    text-align: center;
+    animation-name: cardDescription;
+    animation-duration: 5s;
+}
+
+@keyframes cardDescription {
+    from {font-size: 0px;}
+    to {font-size: 18px;}
+}
+
+
+/* ---------------------footer-------------------- */
+
+.footer{
+    padding: 48px 0px;
+    background-color: #0e0000;
+}
+
+.footer-section{
+    display: flex;
+}
+
+.email-input{
+    height: 50px;
+    flex-grow: 1;
+    color: #ada8a8;
+    font-size: 16px;
+    font-weight: 50;
+    outline: none;
+    border: none;
+    background-color: white;
+}
+
+.email-btn{
+    color: #ffffff;
+    font-size: 24px;
+    font-weight: bold;
+    padding: 7px;
+    margin-left: 0px;
+    border: none;
+    width: 50px;
+    background-color: #FA8C40;
+    cursor: pointer;
+}
+
+.email-btn:hover{
+    background-color: #0e0000;
+    border: 1px solid #FA8C40;
+}
+
+.arrow-icon{
+    width: 26px;
+    height: 24px;
+}
+
+.social-icon-container{
+    display: flex;
+    justify-content: flex-start;
+}
+
+@media  (max-width: 991px) {
+    .social-icon-container{
+        justify-content: center;
+    }
+}
+
+.icon-div{
+    width: 50px;
+    height: 50px;
+    border: 1px solid #ffffff;
+    margin-right: 20px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.icon-div:hover{
+    border: none;
+    background-color: #FA8C40;
+    cursor: pointer;
+}
+
+.social-icon{
+    height: 25px;
+    width: 25px;
+}
+
+.footer-heading{
+    color: #ffffff;
+    font-size: 26px;
+    font-weight: 500;
+    margin: 0px;
+}
+
+.footer-menu-link{
+    color: #ffffff !important;
+    font-size: 16px;
+    font-weight: 200;
+    text-decoration: none;
+    margin-top: 10px;
+    cursor: pointer;
+}
+
+.footer-menu-link:hover{
+    color: #FA8C40 !important;
+    text-decoration: none;
+}
+
+.footer-inta-product-img{
+    width: 50px;
+    height: 50px;
+}
+
+.footer-insta-p, .footer-contact-p{
+    color: #ffffff;
+    font-size: 16px;
+    font-weight: 400;
+    margin: 0px 0px 0px 10px;
+}
+
+.footer-contact-p:hover{
+    color: #FA8C40;
+}
+
+.footer-flex-item{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+@media screen and (min-width: 767px) {
+    .footer-flex-item{
+        align-items: flex-start;
+    }
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+  
